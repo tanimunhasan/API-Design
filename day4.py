@@ -108,7 +108,7 @@ def get_latest_packet():
     connection = get_db_connection()
 
     row = connection.execute(
-                """
+        """
         SELECT id, payload, ip, port, received_at
         FROM nbiot_packets
         ORDER BY id DESC
